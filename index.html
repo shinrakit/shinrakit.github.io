@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานของฉัน | My Portfolio</title>
+    
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Import Google Fonts (Kanit for Headings, Sarabun for Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Kanit', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">
+                <i class="fas fa-code mr-2"></i>DevPortfolio
+            </a>
+            <div class="flex gap-4">
+                <a href="https://github.com" target="_blank" class="text-slate-600 hover:text-indigo-600 transition">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-slate-600 hover:text-blue-600 transition">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 md:py-24 text-center">
+        <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400">
+            <!-- Placeholder for Profile Image -->
+            <div class="w-32 h-32 rounded-full bg-white flex items-center justify-center text-4xl text-slate-300 overflow-hidden">
+                <i class="fas fa-user"></i>
+                <!-- <img src="your-image.jpg" alt="Profile" class="w-full h-full object-cover"> -->
+            </div>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">สวัสดีครับ, ผม <span class="gradient-text">ชื่อของคุณ</span></h1>
+        <p class="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto mb-8 font-light">
+            Full Stack Developer ผู้หลงใหลในการสร้างสรรค์เว็บแอปพลิเคชันและการแก้ปัญหาด้วยโค้ด
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition shadow-lg hover:shadow-indigo-500/30">
+                ดูผลงานทั้งหมด
+            </a>
+            <a href="mailto:email@example.com" class="px-6 py-3 bg-white text-indigo-600 border border-indigo-200 rounded-full font-medium hover:bg-indigo-50 transition">
+                ติดต่อฉัน
+            </a>
+        </div>
+    </header>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="container mx-auto px-4 py-16">
+        <div class="flex items-center justify-between mb-10">
+            <h2 class="text-3xl font-bold border-l-4 border-indigo-500 pl-4">ผลงาน & Repositories</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 card-hover">
+                <div class="h-48 bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white">
+                    <i class="fas fa-shopping-cart text-5xl opacity-80"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">E-Commerce Platform</h3>
+                        <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full font-medium">Completed</span>
+                    </div>
+                    <p class="text-slate-600 mb-4 h-12 overflow-hidden text-sm">
+                        ระบบร้านค้าออนไลน์พร้อมระบบตะกร้าสินค้าและการชำระเงิน รองรับการจัดการสินค้าหลังบ้าน
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">React</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Node.js</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">MongoDB</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-slate-700 hover:text-black transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 card-hover">
+                <div class="h-48 bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center text-white">
+                    <i class="fas fa-chart-line text-5xl opacity-80"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">Data Dashboard</h3>
+                        <span class="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">In Progress</span>
+                    </div>
+                    <p class="text-slate-600 mb-4 h-12 overflow-hidden text-sm">
+                        แดชบอร์ดแสดงผลข้อมูลแบบ Real-time พร้อมกราฟและตารางวิเคราะห์ข้อมูลเชิงลึก
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Vue.js</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Tailwind</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Chart.js</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-slate-700 hover:text-black transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 card-hover">
+                <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white">
+                    <i class="fas fa-mobile-alt text-5xl opacity-80"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">Task Manager App</h3>
+                        <span class="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full font-medium">Mobile</span>
+                    </div>
+                    <p class="text-slate-600 mb-4 h-12 overflow-hidden text-sm">
+                        แอปพลิเคชันจัดการสิ่งที่ต้องทำประจำวัน มีระบบแจ้งเตือนและซิงค์ข้อมูลผ่าน Cloud
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Flutter</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Firebase</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i> App Store
+                        </a>
+                        <a href="#" class="text-slate-700 hover:text-black transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 card-hover">
+                <div class="h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-white">
+                    <i class="fas fa-terminal text-5xl opacity-80"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-slate-800">CLI Tool Automator</h3>
+                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">Utility</span>
+                    </div>
+                    <p class="text-slate-600 mb-4 h-12 overflow-hidden text-sm">
+                        เครื่องมือ Command Line สำหรับช่วย Automate งานเอกสารและจัดการไฟล์ในเครื่อง
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Python</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Rust</span>
+                    </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <span class="text-slate-400 text-sm flex items-center cursor-not-allowed">
+                            <i class="fas fa-lock mr-1"></i> Private
+                        </span>
+                        <a href="#" class="text-slate-700 hover:text-black transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project Card 5: Add New -->
+             <a href="https://github.com/yourusername?tab=repositories" target="_blank" class="group border-2 border-dashed border-slate-300 rounded-xl flex flex-col items-center justify-center p-6 hover:border-indigo-500 hover:bg-indigo-50 transition duration-300 h-full min-h-[300px]">
+                <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-white group-hover:text-indigo-600 transition">
+                    <i class="fas fa-arrow-right text-xl text-slate-400 group-hover:text-indigo-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-500 group-hover:text-indigo-600">ดู Repository อื่นๆ</h3>
+                <p class="text-sm text-slate-400 text-center mt-2">ไปยังหน้า GitHub ของฉัน</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-12 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">สนใจร่วมงานกันไหม?</h3>
+            <p class="text-slate-600 mb-8 max-w-lg mx-auto">
+                ฉันเปิดรับโอกาสใหม่ๆ เสมอ ไม่ว่าจะเป็นโปรเจกต์ Freelance หรือการทำงานประจำ สามารถทักมาคุยกันได้ครับ
+            </p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-indigo-600 hover:text-white transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-sky-500 hover:text-white transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:email@example.com" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-red-500 hover:text-white transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-slate-400 text-sm">
+                &copy; 2023 Your Name. Created with HTML & Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
